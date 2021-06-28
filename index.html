@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <header id="header">
+            <div id="headerdesc">Current weather from Nikita</div>
+        </header>
+        <main id="main">
+            <div id="searchbar">
+                <form class="example">
+                    <input id="search" type="text" placeholder="Search City.." name="search">
+                    <button id="btn1" type="button"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div id="city" class="font"></div>
+            <div id="weather" class="font">
+                <img id="img" />
+                <div id="description"></div>
+            </div>
+            <div id="localtime" class="font"></div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

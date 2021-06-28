@@ -1,0 +1,90 @@
+@font-face
+{
+    font-family: 'Montserat';
+    src: url(./Montserrat-Regular.ttf)
+}
+body{
+    background-color: #b18cb1;
+}
+#fullpage{
+    display: grid;
+    width: 80%;
+    margin-left: 150px;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "header" "main";
+}
+#header{
+    background-color: blue;
+    grid-area: header;
+    background-image: url(./59c1309a1dd02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    font-family: "Montserat";
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headerdesc{
+    color: white;
+    border: 3px solid white;
+    padding: 30px;
+}
+#main{
+    background-color: bisque;
+    grid-area: main;
+    background-color: #e4d0e3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+#searchbar{
+    display: flex;
+    justify-content: right;
+    grid-column: 1/4;
+    justify-content: flex-end;
+}
+.font{
+    font-family: "Montserat";
+    font-size: x-large;
+}
